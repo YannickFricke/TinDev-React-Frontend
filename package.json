@@ -11,6 +11,16 @@
   "dependencies": {},
   "devDependencies": {
     "@changesets/cli": "^2.14.1",
+    "husky": "=4",
+    "lint-staged": ">=10",
     "prettier": "^2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": "prettier --write"
   }
 }
