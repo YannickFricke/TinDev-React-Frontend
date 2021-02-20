@@ -6,6 +6,7 @@
   "author": "Yannick Fricke <YannickFricke@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "^2.14.1",
     "prettier": "^2.2.1"
   }
 }
