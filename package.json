@@ -1,0 +1,8 @@
+{
+  "name": "@yannickfricke/tindev-react-frontend",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/YannickFricke/TinDev-React-Frontend",
+  "author": "Yannick Fricke <YannickFricke@users.noreply.github.com>",
+  "license": "MIT"
+}
