@@ -6,7 +6,9 @@
   "author": "Yannick Fricke <YannickFricke@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "changeset": "changeset"
+    "build": "parcel build ./src/index.html",
+    "changeset": "changeset",
+    "start": "parcel serve ./src/index.html"
   },
   "dependencies": {},
   "devDependencies": {
