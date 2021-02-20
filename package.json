@@ -5,6 +5,10 @@
   "repository": "https://github.com/YannickFricke/TinDev-React-Frontend",
   "author": "Yannick Fricke <YannickFricke@users.noreply.github.com>",
   "license": "MIT",
+  "scripts": {
+    "changeset": "changeset"
+  },
+  "dependencies": {},
   "devDependencies": {
     "@changesets/cli": "^2.14.1",
     "prettier": "^2.2.1"
