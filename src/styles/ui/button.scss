@@ -1,7 +1,10 @@
 @import '../variables';
 
 $button-primary-bg: $primary-color;
-$button-primary-bg-hover: darken($color: $primary-color, $amount: 10);
+$button-primary-bg-hover: darken(
+    $color: $primary-color,
+    $amount: 10,
+);
 
 .button {
     padding: 1rem;
