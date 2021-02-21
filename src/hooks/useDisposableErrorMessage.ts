@@ -2,10 +2,9 @@ import { useState, useEffect, SetStateAction, Dispatch } from 'react';
 
 type MessageType = string | undefined;
 
-export const useDisposableErrorMessage = (): [
-    MessageType,
-    Dispatch<SetStateAction<MessageType>>,
-] => {
+export const useDisposableErrorMessage = (
+    timeToDispose: number = 5000,
+): [MessageType, Dispatch<SetStateAction<MessageType>>] => {
     const [errorMessage, setErrorMessage] = useState<string | undefined>(
         undefined,
     );
@@ -17,12 +16,12 @@ export const useDisposableErrorMessage = (): [
 
         const timer = setTimeout(() => {
             setErrorMessage(undefined);
-        }, 5000);
+        }, timeToDispose);
 
         return () => {
             clearTimeout(timer);
         };
-    }, [errorMessage]);
+    }, [errorMessage, timeToDispose]);
 
     return [errorMessage, setErrorMessage];
 };
