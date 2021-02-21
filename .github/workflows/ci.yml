@@ -1,4 +1,4 @@
-name: Project is testable
+name: CI + CD
 
 on: [push]
 
