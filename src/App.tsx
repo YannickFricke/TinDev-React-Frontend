@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { Button } from './ui/Button';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { UserContext } from './context/UserContext';
 import { Login } from './components/menu/auth/Login';
