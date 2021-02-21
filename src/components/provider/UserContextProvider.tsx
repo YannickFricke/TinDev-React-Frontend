@@ -1,10 +1,10 @@
 import React from 'react';
 import { useRecoilState } from 'recoil';
 import { UserContext } from '../../context/UserContext';
-import { UserLoginState } from '../../state/UserLoginState';
+import { JWTTokenState } from '../../state/JWTTokenState';
 
 export function UserContextProvider(props: React.PropsWithChildren<{}>) {
-    const [token, setToken] = useRecoilState(UserLoginState);
+    const [token, setToken] = useRecoilState(JWTTokenState);
 
     function isLoggedIn() {
         return token !== undefined;
