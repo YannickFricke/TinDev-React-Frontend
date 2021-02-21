@@ -8,7 +8,9 @@
     "scripts": {
         "build": "parcel build ./src/index.html",
         "changeset": "changeset",
-        "start": "parcel serve ./src/index.html"
+        "start": "parcel serve ./src/index.html",
+        "test": "jest",
+        "test:watch": "jest --watch"
     },
     "dependencies": {
         "@types/classnames": "^2.2.11",
