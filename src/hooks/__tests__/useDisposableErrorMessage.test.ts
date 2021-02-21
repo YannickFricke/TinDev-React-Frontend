@@ -45,7 +45,7 @@ describe('useDisposableErrorMessage', () => {
             expect(result.current[0]).toBe(undefined);
         });
 
-        it('should dispose an error message after 2 seconds seconds', () => {
+        it('should dispose an error message after 2 seconds', () => {
             const disposeTime = 2000;
 
             const { result } = renderHook(() =>
