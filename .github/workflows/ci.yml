@@ -24,7 +24,7 @@ jobs:
     name: Deploying the project to Github pages
     runs-on: ubuntu-latest
     needs: [tests]
-    if: "contains(github.ref, 'main')"
+    if: "contains(github.ref, 'master')"
     steps:
       - name: Check out the code
         uses: actions/checkout@v2
