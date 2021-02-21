@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useRecoilState } from 'recoil';
 import axios from 'axios';
 import { UserContext } from '../../context/UserContext';
