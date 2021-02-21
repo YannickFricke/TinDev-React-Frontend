@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRecoilState } from 'recoil';
-import { UserContext } from '../../../context/UserContext';
-import { UserLoginState } from '../../../state/UserLoginState';
+import { UserContext } from '../../context/UserContext';
+import { UserLoginState } from '../../state/UserLoginState';
 
 export function UserContextProvider(props: React.PropsWithChildren<{}>) {
     const [token, setToken] = useRecoilState(UserLoginState);

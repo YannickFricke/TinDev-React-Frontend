@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { UserContext } from './context/UserContext';
-import { Login } from './components/menu/auth/Login';
-import { Register } from './components/menu/auth/Register';
+import { Login } from './components/auth/Login';
+import { Register } from './components/auth/Register';
 
 export function App() {
     const userContext = useContext(UserContext);

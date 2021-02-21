@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { App } from './App';
 import { RecoilRoot } from 'recoil';
 import { HashRouter } from 'react-router-dom';
-import { UserContextProvider } from './components/menu/provider/UserContextProvider';
+import { UserContextProvider } from './components/provider/UserContextProvider';
 
 render(
     <RecoilRoot>
