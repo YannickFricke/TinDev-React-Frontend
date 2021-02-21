@@ -20,7 +20,11 @@ jobs:
             - name: Install all dependencies
               run: yarn install
             - name: Test the source code
-              run: yarn run test
+              run: yarn run test --collect-coverage
+            - uses: codecov/codecov-action@v1
+              with:
+                  token: ${{ secrets.CODECOV_TOKEN }}
+                  fail_ci_if_error: true
 
     deploy:
         name: Deploying the project to Github pages
