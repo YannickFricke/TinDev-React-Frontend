@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import './button.scss';
+import '../styles/ui/button.scss';
 
 interface IButtonProps {
     primary?: boolean;

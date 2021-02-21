@@ -1,4 +1,4 @@
-@import '../../styles/variables';
+@import '../variables';
 
 $button-primary-bg: $primary-color;
 $button-primary-bg-hover: darken($color: $primary-color, $amount: 10);
